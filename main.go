@@ -7,3 +7,7 @@ func main() {
 
 	app.Run()
 }
+
+func Init(app *gin.Engine) {
+
+}
