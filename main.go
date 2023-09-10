@@ -16,12 +16,12 @@ func main() {
 }
 
 func Init(app *gin.Engine) {
-	// router
-	router.MainRouter(app)
-
 	// toml
 	toml := config.InitToml("./config/config.toml")
 
 	// db
 	db.InitMySQL(&toml)
+
+	// router
+	router.MainRouter(app)
 }
