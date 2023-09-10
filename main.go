@@ -2,6 +2,7 @@ package main
 
 import (
 	"ginSample/config"
+	"ginSample/config/db"
 	"ginSample/router"
 	"github.com/gin-gonic/gin"
 )
@@ -19,6 +20,8 @@ func Init(app *gin.Engine) {
 	router.MainRouter(app)
 
 	// toml
-	config.InitToml("./config/config.toml")
+	toml := config.InitToml("./config/config.toml")
 
+	// db
+	db.InitMySQL(&toml)
 }
