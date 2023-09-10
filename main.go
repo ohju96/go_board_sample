@@ -4,6 +4,7 @@ import (
 	"ginSample/config"
 	"ginSample/config/db"
 	"ginSample/router"
+	"ginSample/validator"
 	"github.com/gin-gonic/gin"
 )
 
@@ -25,4 +26,7 @@ func Init(app *gin.Engine) {
 
 	// router
 	router.MainRouter(app)
+
+	// == VALIDATE == //
+	validator.InitValidate()
 }
