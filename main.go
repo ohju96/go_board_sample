@@ -21,6 +21,7 @@ func Init(app *gin.Engine) {
 
 	// db
 	db.InitMySQL(&toml)
+	db.InitRedis(&toml)
 
 	// router
 	router.MainRouter(app)

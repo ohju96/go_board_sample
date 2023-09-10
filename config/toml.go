@@ -8,12 +8,14 @@ import (
 
 type Config struct {
 	Local struct {
-		LocalServer string
-		Dbms        string
-		Db          string
-		User        string
-		Password    string
-		Host        string
+		LocalServer   string
+		Dbms          string
+		Db            string
+		User          string
+		Password      string
+		Host          string
+		RedisHost     string
+		RedisPassword string
 	}
 }
 
