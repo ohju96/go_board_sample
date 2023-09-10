@@ -16,6 +16,7 @@ type Config struct {
 		Host          string
 		RedisHost     string
 		RedisPassword string
+		JwtSecretKey  string
 	}
 }
 
