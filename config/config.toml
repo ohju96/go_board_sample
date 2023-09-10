@@ -1,0 +1,10 @@
+[local]
+# Server
+server = "localhost:8080"
+
+# MySQL
+dbms = "mysql"
+db = "sample"
+user = "sample"
+password = "1234"
+host = "tcp(127.0.0.1:3306)"
