@@ -1,0 +1,17 @@
+[local]
+# Server
+server = "localhost:8080"
+
+# MySQL
+dbms = "mysql"
+db = "sample"
+user = "sample"
+password = "1234"
+host = "tcp(127.0.0.1:3306)"
+
+# Redis
+redisHost = "localhost:6379"
+redisPassword = "1234"
+
+# JWT
+jwtSecretKey = "12testkey12"
